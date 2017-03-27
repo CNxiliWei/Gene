@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('gene/home');
 });
+
+Route::resource('/gene/home','gene\stage\HomePageController');
+
+Route::resource('/gene/homes','gene\stage\HomePagesController');
